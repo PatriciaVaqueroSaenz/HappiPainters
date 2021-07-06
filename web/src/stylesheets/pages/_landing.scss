@@ -1,0 +1,101 @@
+.landing__main {
+  background-color: $colorWhite;
+  height: 87vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include tablet {
+    height: 93vh;
+  }
+
+  &-header {
+    .logo {
+      background-image: url("../../images/pruebas-feas-base.svg");
+      background-size: cover;
+      width: 150px;
+      height: 200px;
+      margin: 30px;
+
+      @include tablet {
+        margin-top: 100px;
+      }
+    }
+  }
+  &-title {
+    color: $colorTomato;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1%;
+    @include tablet {
+      font-size: 24px;
+    }
+  }
+  &-subtitle {
+    text-align: center;
+    color: $colorDarkGreenBlue;
+    font-size: 12.8px;
+    font-weight: normal;
+    margin-bottom: 5%;
+    font-family: $fontOpenSans;
+    width: 264.8px;
+    @include tablet {
+      font-size: 16px;
+      margin-bottom: 27px;
+      width: 331px;
+    }
+  }
+  &-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: white;
+    box-shadow: 2px 2px 4px rgba($color: black, $alpha: 0.7);
+    width: 268px;
+    height: 73.8px;
+    justify-items: center;
+    color: $colorRustyRed;
+    @include tablet {
+      width: 325px;
+      height: 86px;
+    }
+    &-icon1,
+    &-icon2,
+    &-icon3 {
+      font-size: 22.4px;
+      grid-row: 1/2;
+      margin-top: 15px;
+      @include tablet {
+        font-size: 28px;
+      }
+    }
+    &-word1,
+    &-word2,
+    &-word3 {
+      color: $colorGunMetal;
+      font-size: 12.8px;
+      font-family: $fontOpenSans;
+      @include tablet {
+        font-size: 16px;
+      }
+    }
+  }
+  &-button {
+    background-color: $colorDirtyBlue;
+    width: 129px;
+    height: 42px;
+    border-radius: 21px;
+    margin-top: 50px;
+    text-align: center;
+    &--start {
+      position: absolute;
+      color: $colorWhite;
+      font-size: 16px;
+      font-family: $fontOpenSans;
+      font-weight: 600;
+      transform: translate(-50%, 45%);
+      text-transform: uppercase;
+    }
+  }
+}

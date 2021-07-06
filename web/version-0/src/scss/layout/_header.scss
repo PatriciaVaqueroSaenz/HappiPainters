@@ -1,0 +1,14 @@
+.header {
+  height: 110px;
+  &__logo {
+    background-image: url("../images/pruebas-feas-base.svg");
+    background-size: cover;
+    margin: 5px 0px 0px 40px;
+    transform: rotate(90deg);
+    width: 90px;
+    height: 120px;
+    &:hover {
+      background-image: url("../images/prueba-fea.svg");
+    }
+  }
+}

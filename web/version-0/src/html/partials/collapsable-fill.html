@@ -1,0 +1,78 @@
+<section
+  className="collapsable-fill js-collapsable js-collapsable-fill collapsable-hidden"
+>
+  <div className="collapsable-fill__content">
+    <label className="label" for="name">nombre completo *</label>
+    <input
+      className="input js-nameInput"
+      id="name"
+      maxlength="19"
+      type="text"
+      name="name"
+      placeholder="Ej: Sally Jill"
+      required
+    />
+    <label className="label" for="job">puesto *</label>
+    <input
+      className="input js-job"
+      id="job"
+      maxlength="22"
+      type="text"
+      name="job"
+      placeholder="Ej: Front-end unicorn"
+      required
+    />
+    <label className="label" for="image">imagen de perfil *</label>
+    <div className="collapsable-fill__content--buttonPreview">
+      <label className="button" for="img-selector">Añadir imagen</label>
+      <input
+        type="file"
+        name=""
+        id="img-selector"
+        className="action__hiddenField js__profile-upload-btn"
+        required
+      />
+      <div className="square js__profile-preview"></div>
+    </div>
+    <label className="label" for="email">email *</label>
+    <input
+      className="input js-email"
+      id="email"
+      type="email"
+      name="email"
+      placeholder="Ej: sally-hill@gmail.com"
+      value
+      required
+    />
+    <label className="label" for="telephone">teléfono *</label>
+    <input
+      className="input js-telephone"
+      id="telephone"
+      type="tel"
+      name="phone"
+      placeholder="Ej: 123456789"
+      value
+      required
+    />
+    <label className="label" for="linkedin">linkedin *</label>
+    <input
+      className="input js-linkedin"
+      id="linkedin"
+      type="text"
+      name="linkedin"
+      placeholder="Ej: sally.hill"
+      value
+      required
+    />
+    <label className="label" for="github">github *</label>
+    <input
+      className="input js-github"
+      id="github"
+      type="text"
+      name="github"
+      placeholder="Ej: sally-hill"
+      value
+      required
+    />
+  </div>
+</section>
